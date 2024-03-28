@@ -30,7 +30,7 @@ export default function CartPage() {
   }, [cartProducts]);
 
   useEffect(() => {
-    if (profileData?.city) {
+    if (profileData) {
       setAddress(profileData);
     }
   }, [profileData]);
